@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- JS -->
+    <script src="./js/scripts.js" defer></script>
+    <!-- Ion-Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <title>DevNotes</title>
+  </head>
+  <body>
+    <header>
+      <h1>DevNotes</h1>
+      <div id="search_container">
+        <ion-icon name="search-outline"></ion-icon>
+        <input
+          type="search"
+          id="search_input"
+          placeholder="Busque por uma nota"
+        />
+      </div>
+      <button id="export_notes">
+        Exportar CSV <ion-icon name="download-outline"></ion-icon>
+      </button>
+    </header>
+    <section id="add_note_container">
+      <div class="search_note">
+        <input
+          type="text"
+          id="note_content"
+          placeholder="O que deseja anotar?"
+        />
+        <button class="add_note">
+          <ion-icon name="add-circle-outline"></ion-icon>
+        </button>
+      </div>
+      <h3 id="created_note" class="hide">Nota criada</h3>
+      <h3 id="fixed_note" class="hide">Nota fixada</h3>
+      <h3 id="copied_note" class="hide">Nota copiada</h3>
+      <h3 id="deleted_note" class="hide">Nota excluída</h3>
+    </section>
+    <section id="notes_container">
+      <!-- ! Note element template. No need to keep it in code -->
+      <!-- <article class="note">
+        <textarea placeholder="Adicione algum texto"></textarea>
+        <ion-icon name="pin-outline" class="pin"></ion-icon>
+        <ion-icon name="trash" class="delete"></ion-icon>
+        <ion-icon name="file-tray-stacked-outline" class="duplicate"></ion-icon>
+      </article> -->
+    </section>
+  </body>
+</html>
